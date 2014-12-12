@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    title  Calculator
+    link(href='style.css', rel='stylesheet')
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+    script(language="JavaScript" src='script.js' type="text/javascript")  
+  
+  body
+    #container
+      div(class="row")
+        div(id="screen")
+      div(class="row")
+        div(class='large' id="clear") CLEAR
+        div(class='small operator' id="divide") /
+      div(class="row")
+        div(class='small num' id="n7") 7
+        div(class='small num' id="n8") 8
+        div(class='small num' id="n9") 9
+        div(class='small operator' id="multiply") *
+      div(class="row")
+        div(class='small num' id="n4") 4
+        div(class='small num' id="n5") 5
+        div(class='small num' id="n6") 6
+        div(class='small operator' id="subtract") -
+      div(class="row")
+        div(class='small num' id="n1") 1
+        div(class='small num' id="n2") 2
+        div(class='small num' id="n3") 3
+        div(class='small operator' id="add") +
+      div(class="row")
+        div(class='medium num' id="n0") 0
+        div(class='small' id="decimalp") .
+        div(class='small operator' id="equals") =
+      
+      
