@@ -2,14 +2,16 @@
 <html lang="en">
   <head>
     <title> Calculator</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script language="JavaScript" src="script.js" type="text/javascript"> </script>
+    <script language="JavaScript" src="js/script.js" type="text/javascript"> </script>
   </head>
   <body>
-    <div id="container">
+    <div class="container">
       <div class="row">
-        <div id="screen"></div>
+        <div id="right" class="screen">
+          <p class="screenp"></p>
+        </div>
       </div>
       <div class="row">
         <div id="clear" class="large">CLEAR</div>
@@ -35,8 +37,8 @@
       </div>
       <div class="row">
         <div id="n0" class="medium num">0</div>
-        <div id="decimalp" class="small">.</div>
-        <div id="equals" class="small operator">=</div>
+        <div id="decimalp" class="small num">.</div>
+        <div id="equals" class="small equals">=</div>
       </div>
     </div>
   </body>
