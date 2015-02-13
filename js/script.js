@@ -47,36 +47,47 @@ $(document).ready(function(){
       switch(numFirst){
         case '.':
           $('.screenp').append('.');
+          $('.op').empty();
           break;
         case '0':
           $('.screenp').append('0');
+          $('.op').empty();
           break;
         case '1':
           $('.screenp').append('1');
+          $('.op').empty();
           break;
         case '2':
           $('.screenp').append('2');
+          $('.op').empty();
           break;
         case '3':
           $('.screenp').append('3');
+          $('.op').empty();
           break;
         case '4':
           $('.screenp').append('4');
+          $('.op').empty();
           break;
         case '5':
           $('.screenp').append('5');
+          $('.op').empty();
           break;
         case '6':
           $('.screenp').append('6');
+          $('.op').empty();
           break;
         case '7':
           $('.screenp').append('7');
+          $('.op').empty();
           break;
         case '8':
           $('.screenp').append('8');
+          $('.op').empty();
           break;
         case '9':
           $('.screenp').append('9');
+          $('.op').empty();
           break;
         }
       });
@@ -116,6 +127,7 @@ $(document).ready(function(){
       numFirst = 0;
       numFirst = ($(this).text());
       inputArray.push(numFirst);
+      clearScreen();
       return inputArray;
     });
   }
@@ -125,6 +137,7 @@ $(document).ready(function(){
   function logOperator(){
     $('.operator').on("click",function(){
       operator = ($(this).text());
+      $('.op').append(operator);
       arrNum = inputArray.join("");
       joinedArray.push(arrNum);
       inputArray = [];
